@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+
+{
+    'name': "PFM - Sale",
+    'summary': """PFM - Sale""",
+    'author': 'Cravit',
+    'website': 'https://www.cravit.nl',
+    'category': 'Sale',
+    'version': '14.0.1.0',
+    'depends': [
+        'base',
+        'crm',
+        'account',
+        'pfm_base',
+        'sale',
+        'sale_subscription',
+        #'sale_operating_unit',
+        'stock',
+        'mrp',
+        'product',
+    ],
+    'data': [
+            'data/sequence.xml',
+            'security/ir.model.access.csv',
+            'views/sale_order.xml',
+            'views/customer_agreement.xml',
+            'views/res_partner.xml',
+            'views/product_pricelist.xml',
+            'views/crm_lead.xml',
+            'menu_items.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Res Config Settings-->
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.pfm</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="60"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="PFM ST Setting" string="PFM ST Setting" data-key="pfm_synchroteam">
+                        <h2>API Integration Setting</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="st_url" class="col-lg-3 o_light_label"/>
+                                            <field name="st_url"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="st_api_key" class="col-lg-3 o_light_label"/>
+                                            <field name="st_api_key"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="st_domain" class="col-lg-3 o_light_label"/>
+                                            <field name="st_domain"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row mt16 o_settings_container">
+                            <button name="test_st_connection" type="object" string="Test Connection" icon="fa-plug"/>
+                        </div>
+
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- <record id="action_pfm_st_setting" model="ir.actions.act_window">
+            <field name="name">PFM ST Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_id" ref="res_config_settings_view_form"/>
+            <field name="groups">base.group_system</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'pfm_synchroteam'}</field>
+        </record> -->
+
+        <record id="action_pfm_st_setting" model="ir.actions.act_window">
+            <field name="name">PFM ST Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_id" ref="res_config_settings_view_form"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'pfm_synchroteam', 'bin_size': False}</field>
+        </record>
+
+    </data>
+</odoo>

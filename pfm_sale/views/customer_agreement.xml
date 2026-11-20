@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="customer_agreement_view" model="ir.ui.view">
+        <field name="name">customer.agreement.form.view</field>
+        <field name="model">customer.agreement</field>
+        <field name="arch" type="xml">
+            <form string="Type">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code" readonly="1"/>
+                            <field name="partner_id"/>
+                            <field name="po_number"/>
+                            <field name="start_date" />
+                            <field name="end_date" />
+                        </group>
+                        <group>
+                            <field name="max_amount" />
+                            <field name="amount_used" />
+                            <field name="note"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="customer_agreement_tree_view" model="ir.ui.view">
+        <field name="name">customer.agreement.tree.view</field>
+        <field name="model">customer.agreement</field>
+        <field name="arch" type="xml">
+            <tree string="Agreement">
+                <field name="code"/>
+                <field name="partner_id"/>
+                <field name="po_number"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="max_amount" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="customer_agreement_search_view" model="ir.ui.view">
+        <field name="name">customer.agreement.search.view</field>
+        <field name="model">customer.agreement</field>
+        <field name="arch" type="xml">
+            <search string="Agreement">
+                <field name="code"/>
+                <field name="partner_id"/>
+                <field name="po_number"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="max_amount" />
+
+                <filter string="Contract Ended " name="end_contract"
+                        domain="[('end_date', '&lt;', context_today().strftime('%Y-%m-%d'))]"
+                        />
+                <filter string="Current Contacts" name="activities_today"
+                        domain="[('end_date', '&gt;', context_today().strftime('%Y-%m-%d'))]"/>
+                
+                <group expand="0" string="Group By">
+                    <filter name="customer" string="Partner" domain="[]"
+                            context="{'group_by':'partner_id'}" />
+                    <filter name="po_number" string="Po Nnumber" domain="[]"
+                            context="{'group_by':'po_number'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="customer_agreement_action" model="ir.actions.act_window">
+        <field name="name">Customer Agreements</field>
+        <field name="res_model">customer.agreement</field>
+        <field name="view_mode">form,tree</field>
+        <field name="view_id" ref="customer_agreement_tree_view"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to create a new customer agreement.</p>
+        </field>
+    </record>
+
+    <record id="customer_agreement_action_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="customer_agreement_view"/>
+        <field name="act_window_id" ref="customer_agreement_action"/>
+    </record>
+
+    <record id="customer_agreement_action_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="customer_agreement_tree_view"/>
+        <field name="act_window_id" ref="customer_agreement_action"/>
+    </record>
+
+</odoo>

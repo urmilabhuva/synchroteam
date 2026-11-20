@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Picking Operation -->
+        <template id="report_picking" inherit_id="stock.report_picking">
+            <xpath expr="//div[@name='div_sched_date']" position="after">
+                <div t-if="o.mechanic" class="col-auto" name="div_mechanic">
+                    <strong>Job Mechanic:</strong>
+                    <p t-field="o.mechanic"/>
+                </div>
+                <div t-if="o.job_picking_notes" class="col-auto" name="div_picking_note">
+                    <strong>Job Picking Notes</strong>
+                    <p t-field="o.job_picking_notes"/>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

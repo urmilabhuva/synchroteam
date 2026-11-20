@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Product Template -->
+        <!-- <record id="view_product_pfm_job_inherit" model="ir.ui.view">
+            <field name="name">product.form.job.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="sale.product_template_form_view_invoice_policy"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_policy']" position="before">
+                    <field name="need_to_perform_task" attrs="{'invisible': ['|', ('type', '!=', 'service'), ('service_tracking', 'not in', ('task_new_project','task_global_project'))]}"/>
+                </xpath>
+            </field>
+        </record>
+ -->
+    </data>
+</odoo>

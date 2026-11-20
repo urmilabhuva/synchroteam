@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Res Partner -->
+        <record id="view_partner_form_pfm_inherit" model="ir.ui.view">
+            <field name="name">res.partner.form.job.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="st_partner_id" invisible="1"/>
+                    <field name="job_ids" widget="many2many_tags" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

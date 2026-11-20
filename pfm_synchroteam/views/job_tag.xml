@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Job Tag -->
+        <record id="view_job_job_tag_tree" model="ir.ui.view">
+            <field name="name">job.job.tag.tree</field>
+            <field name="model">job.job.tag</field>
+            <field name="arch" type="xml">
+                <tree string="Job Tags">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_job_job_tag_form" model="ir.ui.view">
+            <field name="name">job.job.tag.form</field>
+            <field name="model">job.job.tag</field>
+            <field name="arch" type="xml">
+                <form string="Job Tag">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_job_tag_model" model="ir.actions.act_window">
+            <field name="name">Job Tags</field>
+            <field name="res_model">job.job.tag</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_job_job_tag_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a Job Tags
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

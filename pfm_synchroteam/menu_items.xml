@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <!--Jobs -->
+        <menuitem name="Jobs"
+                  id="job_main"
+                  web_icon="pfm_synchroteam,static/description/icon.png"
+                  sequence="60"/>
+
+        <menuitem id="menu_job" name="Jobs" parent="job_main" sequence="2"/>
+
+        <menuitem id="menu_job_configuration" name="Configuration" parent="job_main" sequence="35"/>
+
+        <menuitem id="job_type_menu" name="Job Types" parent="pfm_synchroteam.menu_job_configuration" action="pfm_synchroteam.action_job_type_model" sequence="2" groups="pfm_synchroteam.pfm_job_manager"/>
+
+        <menuitem id="job_tag_menu" name="Job Tags" parent="pfm_synchroteam.menu_job_configuration" action="pfm_synchroteam.action_job_tag_model" sequence="3" groups="pfm_synchroteam.pfm_job_manager"/>
+
+        <menuitem id="custom_field_menu" name="Custom Fields" parent="pfm_synchroteam.menu_job_configuration" action="pfm_synchroteam.action_custom_field_model" sequence="19" groups="pfm_synchroteam.pfm_job_manager"/>
+
+         <menuitem id="custom_field_value_menu" name="Custom Field Values" parent="pfm_synchroteam.menu_job_configuration" action="pfm_synchroteam.action_custom_field_value_model" sequence="36" groups="pfm_synchroteam.pfm_job_manager"/>
+
+        <menuitem id="job_template_menu" name="Job Templates" parent="pfm_synchroteam.menu_job_configuration" action="pfm_synchroteam.action_job_description_template_model" sequence="20" groups="pfm_synchroteam.pfm_job_manager"/>
+
+        <menuitem id="job_log_menu" name="Job Logs" parent="pfm_synchroteam.menu_job_configuration" action="pfm_synchroteam.action_job_log_model" sequence="21" groups="pfm_synchroteam.pfm_job_manager"/>
+
+        <menuitem id="menu_job_management" name="Job Management" parent="menu_job" action="pfm_synchroteam.action_job_model" sequence="10"/>
+
+    </data>
+</odoo>

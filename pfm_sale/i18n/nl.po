@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Odoo Serial numbers\n"
+"Language: nl\n"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_search_view
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_tree_view
+msgid "Agreement"
+msgstr "Overeenkomst"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__code
+msgid "Agreement Code"
+msgstr "Overeenkomstcode"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.res_partner_custom_agreement_form_view
+msgid "Agreements"
+msgstr "Overeenkomsten"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__amount_used
+msgid "Amount Used"
+msgstr "Gebruikte hoeveelheid"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.view_order_form_inherit
+msgid "BOM Name"
+msgstr "BOM naam"
+
+#. module: pfm_sale
+#: model_terms:ir.actions.act_window,help:pfm_sale.customer_agreement_action
+msgid "Click to create a new customer agreement."
+msgstr "Klik om een nieuwe overeenkomst te maken."
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_search_view
+msgid "Contract Ended"
+msgstr "Contract beëindigd"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__create_uid
+msgid "Created by"
+msgstr "Gemaakt door"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__create_date
+msgid "Created on"
+msgstr "Gemaakt op"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_search_view
+msgid "Current Contacts"
+msgstr "Huidige contacten"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__partner_id
+msgid "Customer"
+msgstr "Klant"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_sale_order__agreement_id
+msgid "Customer Agreement"
+msgstr "Klant overeenkomst"
+
+#. module: pfm_sale
+#: model:ir.actions.act_window,name:pfm_sale.customer_agreement_action
+#: model:ir.model,name:pfm_sale.model_customer_agreement
+#: model:ir.model.fields,field_description:pfm_sale.field_res_partner__agreement_ids
+#: model:ir.model.fields,field_description:pfm_sale.field_res_users__agreement_ids
+#: model:ir.ui.menu,name:pfm_sale.customer_agreement_menu
+msgid "Customer Agreements"
+msgstr "Klantenovereenkomsten"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__note
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__end_date
+msgid "End Date"
+msgstr "Einddatum"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_search_view
+msgid "Group By"
+msgstr "Groeperen op"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pfm_sale
+#: model:ir.model.fields,help:pfm_sale.field_sale_order__partner_installation_id
+msgid "Insatallation address for current sales order."
+msgstr "Installatieadres voor huidige verkooporder."
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_sale_order__partner_installation_id
+msgid "Installation Address"
+msgstr "Installatie adres"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_account_invoice
+msgid "Invoice"
+msgstr "Factuur"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Factuurregel"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement____last_update
+msgid "Last Modified on"
+msgstr "Laatst aangepast op"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__max_amount
+msgid "Max. Amount"
+msgstr "Max. Bedrag"
+
+#. module: pfm_sale
+#: code:addons/pfm_sale/models/customer_agreement.py:25
+#: code:addons/pfm_sale/models/customer_agreement.py:26
+msgid "New"
+msgstr "Nieuw"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_product_pricelist__operating_unit_id
+msgid "Operating Unit"
+msgstr "Operating Unit"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__po_number
+msgid "PO Number"
+msgstr "PO nummer"
+
+#. module: pfm_sale
+#: code:addons/pfm_sale/models/.ipynb_checkpoints/sale_order_line-checkpoint.py:29
+#: code:addons/pfm_sale/models/sale_order_line.py:29
+msgid "Part: %s / Quantity %s / Price Extra: EU%s"
+msgstr "Onderdeel: %s / Aantal %s / Prijs Extra: EU%s"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_res_partner
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_search_view
+msgid "Partner"
+msgstr "Partner"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_search_view
+msgid "Po Nnumber"
+msgstr "PO nummer"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_product_pricelist
+msgid "Pricelist"
+msgstr "Prijslijst"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_sale_order__repair_order
+msgid "Repair Order"
+msgstr "Reparatieorder"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_sale_order
+msgid "Sale Order"
+msgstr "Verkooporder"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_sale_subscription_type
+msgid "Sale subsription Type"
+msgstr "Verkoop subscription Type"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkooporderregel"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_sale_order_line__incoming_repair_lot_id
+msgid "Serial Number in"
+msgstr "Serienummer in"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_sale_order_line__outgoing_repair_lot_id
+msgid "Serial Number out"
+msgstr "Serienummer uit"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_customer_agreement__start_date
+msgid "Start Date"
+msgstr "Begin datum"
+
+#. module: pfm_sale
+#: model:ir.model,name:pfm_sale.model_sale_subscription
+msgid "Subscription"
+msgstr "Abonnement"
+
+#. module: pfm_sale
+#: model_terms:ir.ui.view,arch_db:pfm_sale.customer_agreement_view
+msgid "Type"
+msgstr "Type"
+
+#. module: pfm_sale
+#: model:ir.model.fields,field_description:pfm_sale.field_account_invoice_line__warranty
+#: model:ir.model.fields,field_description:pfm_sale.field_sale_order_line__warranty
+msgid "Warranty"
+msgstr "Garantie"
+

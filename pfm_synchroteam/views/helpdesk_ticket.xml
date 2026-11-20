@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    	<record id="action_sale_order" model="ir.actions.act_window">
+            <field name="name">Sale Order(s)</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="context">{'default_ticket_id': active_id}</field>
+            <field name="domain">[('ticket_id', '=', active_id)]</field>
+        </record>
+
+        <record id="view_helpdesk_ticket_inherit" model="ir.ui.view">
+            <field name="name">helpdesk.ticket.form.inherit</field>
+            <field name="model">helpdesk.ticket</field>
+            <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='assign_ticket_to_self']" position="after">
+                    <button name="assign_quotation" string="Create Quotation" type="object" class="oe_highlight"/>
+                </xpath>
+                <xpath expr="//button[@name='action_get_attachment_tree_view']" position="before">
+                    <button class="oe_stat_button" icon="fa-usd" type="action" name="%(action_sale_order)d">
+                        <field name="sale_count" string="Quotation/Sale Order(s)" widget="statinfo" />
+                    </button>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

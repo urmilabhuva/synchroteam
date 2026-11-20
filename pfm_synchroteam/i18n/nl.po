@@ -1,0 +1,1595 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pfm_synchroteam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-21 10:54+0000\n"
+"PO-Revision-Date: 2019-06-25 19:16+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: nl\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__manufacture_count
+msgid "# Manufacturing Orders"
+msgstr "# Manufacturing Orders"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.report_picking
+msgid "<strong>Job Mechanic</strong>"
+msgstr "<strong>Monteur</strong>"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.report_picking
+msgid "<strong>Job Picking Notes</strong>"
+msgstr "<strong>Job Picking Notities</strong>"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.res_config_settings_view_form
+msgid "API Integration Setting"
+msgstr "API Integratie Instelling"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_hr_settings__st_api_key
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_config_settings__st_api_key
+msgid "API Key for Authorisation"
+msgstr "API-sleutel voor autorisatie"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__access_warning
+msgid "Access warning"
+msgstr "Toegang waarschuwing"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_needaction
+msgid "Action Needed"
+msgstr "Vereist actie"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__activity_ids
+msgid "Activities"
+msgstr "Activiteiten"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__activity_state
+msgid "Activity State"
+msgstr "Activiteitsfase"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__actual_end_date
+msgid "Actual End Date"
+msgstr "Werkelijke einddatum"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__actual_start_date
+msgid "Actual Start Date"
+msgstr "Werkelijke startdatum"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__address
+msgid "Address"
+msgstr "Adres"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Address Detail"
+msgstr "Adres Detail"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:406
+#, python-format
+msgid "All jobs related to an order should have the same installation country"
+msgstr "Alle jobs gerelateerd aan een order moeten het zelfde installatie land bevatten"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:110
+#, python-format
+msgid "All jobs should have the same installation location country."
+msgstr "Alle jobs moeten het zelfde installatie locatie land bevatten."
+
+#. module: pfm_synchroteam
+#: constraint:sale.order:0
+msgid "An order can only contain jobs for 1 installation country."
+msgstr "Een order kan alleen jobs voor 1 installatie land bevatten."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_attachment_count
+msgid "Attachment Count"
+msgstr "Aantal bijlagen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_hr_settings__st_url
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_config_settings__st_url
+msgid "Authentication URL"
+msgstr "Verificatie-URL"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__auto_process_delivery
+msgid "Automatic processing of delivery order"
+msgstr "Automatische verwerking van aflever orders"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_stock_backorder_confirmation
+msgid "Backorder Confirmation"
+msgstr "Backorderbevestiging"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:255
+#, python-format
+msgid "Cancel job %s in ST first."
+msgstr "Cancel job %s in eerst in ST."
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0 selection:sale.order,state:0
+msgid "Cancelled"
+msgstr "Geannuleerd"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__city
+msgid "City"
+msgstr "Plaats"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:445
+#, python-format
+msgid "City is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Plaats is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__client_order_ref
+msgid "Client Order Reference"
+msgstr "Bestelreferentie klant"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+#: selection:job.job,status:0
+msgid "Completed"
+msgstr "Voltooid"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configuratie Instellingen"
+
+#. module: pfm_synchroteam
+#: model:ir.ui.menu,name:pfm_synchroteam.menu_job_configuration
+msgid "Configuration"
+msgstr "Instellingen"
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0
+msgid "Confirmed"
+msgstr "Bevestigd"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__contact_email
+msgid "Contact Email"
+msgstr "Contact email"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__contact_firstname
+msgid "Contact Firstname"
+msgstr "Contact Voornaam"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__contact_lastname
+msgid "Contact Lastname"
+msgstr "Contact Achternaam"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__contact_mobile
+msgid "Contact Mobile"
+msgstr "Contact Mobiel"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__contact_phone
+msgid "Contact Phone"
+msgstr "Contact Telefoon"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:480
+#: code:addons/pfm_synchroteam/models/job_job.py:485
+#, python-format
+msgid "Contact firstname is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Contact voornaam is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__country_id
+msgid "Country"
+msgstr "Land"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:460
+#, python-format
+msgid "Country is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Land is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_helpdesk_ticket_inherit
+msgid "Create Quotation"
+msgstr "Offerte creëren"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.actions.act_window,help:pfm_synchroteam.action_custom_field_model
+#: model_terms:ir.actions.act_window,help:pfm_synchroteam.action_custom_field_value_model
+msgid "Create a Custom Field Values"
+msgstr "Maak aangepaste veldwaarden"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.actions.act_window,help:pfm_synchroteam.action_job_tag_model
+msgid "Create a Job Tags"
+msgstr "Maak een Job tag"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.actions.act_window,help:pfm_synchroteam.action_job_description_template_model
+msgid "Create a Job Template"
+msgstr "Maak een opdrachtsjabloon"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.actions.act_window,help:pfm_synchroteam.action_job_type_model
+msgid "Create a Job type"
+msgstr "Maak een jobtype aan"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.actions.act_window,help:pfm_synchroteam.action_job_model
+msgid "Create a Job."
+msgstr "Maak een job."
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Created"
+msgstr "Gemaakt"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__create_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__create_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__create_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__create_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__create_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__create_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__create_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__create_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__create_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__create_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__create_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__create_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_custom_field
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_custom_field_form
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_custom_field_tree
+msgid "Custom Field"
+msgstr "Aangepast veld"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_custom_field_value
+msgid "Custom Field Associated to Job"
+msgstr "Aangepast veld geassocieerd met Job"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_custom_field_value_form
+msgid "Custom Field Value"
+msgstr "Aangepaste veldwaarde"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_custom_field_value_model
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_custom_field_value_tree
+msgid "Custom Field Values"
+msgstr "Aangepaste veldwaarden"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_custom_field_model
+#: model:ir.ui.menu,name:pfm_synchroteam.custom_field_menu
+msgid "Custom Fields"
+msgstr "Aangepaste velden"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__custom_field_ids
+msgid "Custom Fields Value"
+msgstr "Aangepaste veldenwaarde"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__partner_id
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_tree
+msgid "Customer"
+msgstr "Klant"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__access_url
+msgid "Customer Portal URL"
+msgstr "Klant portaal URL"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:926
+#, python-format
+msgid "Delivered %sx - %s/ %s - EU%s "
+msgstr "Geleverd %sx - %s/ %s - EU%s "
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1051
+#, python-format
+msgid "Delivery %s needs to be delivered to be able to process the job."
+msgstr "Levering %s moet geleverd om de job te verwerken."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__delivery_address
+msgid "Delivery Address"
+msgstr "Afleveradres"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__delivery_address
+msgid "Delivery address for current Job."
+msgstr "Afleveradres voor huidige job."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__description
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_job_description_template
+msgid "Description template for Job"
+msgstr "Omschrijvingstemplate voor Job"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__display_name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__display_name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__display_name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__display_name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__display_name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__display_name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__display_name
+msgid "Display Name"
+msgstr "Weergave naam"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_hr_settings__st_domain
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_config_settings__st_domain
+msgid "Domain URL"
+msgstr "Domein URL"
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0
+msgid "Draft"
+msgstr "Concept"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:296
+#, python-format
+msgid "Duration is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Duur is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:475
+#, python-format
+msgid "Email is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Email is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__estimation_date
+msgid "Estimation Date"
+msgstr "Geschatte datum"
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0
+msgid "Exception"
+msgstr "Uitzondering"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:911
+#, python-format
+msgid "Extra sale order lines need to be created for additional products"
+msgstr "Extra sale order lines moeten worden aangemaakt voor de extra producten"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_follower_ids
+msgid "Followers"
+msgstr "Volgers"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Volgers (Kanalen)"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Volgers (Relaties)"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "General"
+msgstr "Algemeen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__partner_latitude
+msgid "Geo Latitude"
+msgstr "Geo breedtegraad"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__partner_longitude
+msgid "Geo Longitude"
+msgstr "Geo lengtegraad"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Get ST Status"
+msgstr "Krijg ST status"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Group By"
+msgstr "Groepeer op"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_helpdesk_ticket
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__ticket_id
+msgid "Helpdesk Ticket"
+msgstr "Helpdesk ticket"
+
+#. module: pfm_synchroteam
+#: selection:job.job,priority:0
+msgid "High"
+msgstr "Hoog"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Indien aangevinkt zullen nieuwe berichten uw aandacht vragen."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Indien aangevinkt vragen nieuwe berichten uw aandacht."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Indien aangevinkt hebben sommige leveringen een fout."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__site_id
+msgid "Installation Location"
+msgstr "Installatie adres"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__invoice_id
+msgid "Invoice"
+msgstr "Factuur"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__invoice_response_stored
+msgid "Invoice Response"
+msgstr "Factuur reactie"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_is_follower
+msgid "Is Follower"
+msgstr "Is een volger"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order_line__is_job
+msgid "Is Job"
+msgstr "Is Job"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_project_task__job_id
+msgid "JOB"
+msgstr "JOB"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_job_job
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__job_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_mrp_production__job_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_purchase_order__job_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order_line__job_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_move__job_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_picking__job_id
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_tree
+msgid "Job"
+msgstr "Job"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:207
+#, python-format
+msgid "Job %s is not in draft status, please set to draft first."
+msgstr "Job %s heeft geen draft status, zet deze eerst op draft."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__jobs_count
+msgid "Job Count"
+msgstr "Job aantal"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Job Date"
+msgstr "Job Datum"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__description
+msgid "Job Description"
+msgstr "Functieomschrijving"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__job_in_alert
+msgid "Job In Alert"
+msgstr "Job in Alert"
+
+#. module: pfm_synchroteam
+#: model:ir.ui.menu,name:pfm_synchroteam.menu_job_management
+msgid "Job Management"
+msgstr "Job Management"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_picking__mechanic
+msgid "Job Mechanic"
+msgstr "Job Mechanic"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__name
+msgid "Job Number"
+msgstr "Job nummer"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_picking__job_picking_in_alert
+msgid "Job Picking Alert"
+msgstr "Job Picking Alert"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_picking__job_picking_notes
+msgid "Job Picking Notes"
+msgstr "Job Picking Notities"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_picking__job_picking_released
+msgid "Job Picking Released"
+msgstr "Job Picking Vrijgegeven"
+
+#. module: pfm_synchroteam
+#: model:mail.message.subtype,description:pfm_synchroteam.mt_job_planned
+#: model:mail.message.subtype,name:pfm_synchroteam.mt_job_planned
+msgid "Job Planned"
+msgstr "Job gepland"
+
+#. module: pfm_synchroteam
+#: model:mail.message.subtype,name:pfm_synchroteam.mt_job_sent
+msgid "Job Sent"
+msgstr "Job verzonden"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__status
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order_line__job_status
+msgid "Job Status"
+msgstr "Job status"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_job_job_tag
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_tag_form
+msgid "Job Tag"
+msgstr "Job Tag"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_job_tag_model
+#: model:ir.ui.menu,name:pfm_synchroteam.job_tag_menu
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_tag_tree
+msgid "Job Tags"
+msgstr "Job Tags"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_project_task__job_task_in_alert
+msgid "Job Task Alert"
+msgstr "Job taak Alert"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_project_task__job_task_released
+msgid "Job Task Released"
+msgstr "Job taak is uitgevoerd"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_description_template_form
+msgid "Job Template"
+msgstr "Job Opdrachtsjabloon"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_job_description_template_model
+#: model:ir.ui.menu,name:pfm_synchroteam.job_template_menu
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_description_template_tree
+msgid "Job Templates"
+msgstr "Job sjablonen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__job_type_id
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_type_form
+msgid "Job Type"
+msgstr "Job Type"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_job_type
+#: model:ir.ui.menu,name:pfm_synchroteam.job_type_menu
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_type_tree
+msgid "Job Types"
+msgstr "Job Typen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__validation_user_id
+msgid "Job Validated by"
+msgstr "Job gevalideerd door"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Job in Alert"
+msgstr "Job in Alert"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:567
+#: code:addons/pfm_synchroteam/models/job_job.py:570
+#, python-format
+msgid "Job is in exception due to MO %s is in %s state. Please remove MO to continue."
+msgstr "Job is in exceptie status omdat MO %s in %s status staat. Verwijder de MO om verder te gaan."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:545
+#: code:addons/pfm_synchroteam/models/job_job.py:548
+#, python-format
+msgid "Job is in exception due to picking %s is in %s state. Please remove picking to continue."
+msgstr "Job is in exceptie status omdat picking %s in %s status staat. Verwijder de picking om verder te gaan."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:949
+#, python-format
+msgid "Job is put in exception state due to job is canceled after confirmed. Please process PO/MO for further process."
+msgstr "Job is in exceptie status omdat deze geannuleerd is na bevestiging. Verwerk PO/MO voor verdere verwerking."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:952
+#, python-format
+msgid "Job is put in exception state due to job is canceled after confirmed. Please process PO/MO for further process.'"
+msgstr "Job is in exceptie status omdat deze geannuleerd is na bevestiging. Verwerk PO/MO voor verdere verwerking.'"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:966
+#: code:addons/pfm_synchroteam/models/job_job.py:969
+#, python-format
+msgid "Job is put in exception state due to job is canceled in ST, please check and cancel Odoo order."
+msgstr "Job is in exceptie aangezien hij is geannuleerd in Synchroteam, controleer en verwijder Odoo order."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:318
+#: code:addons/pfm_synchroteam/models/job_job.py:321
+#, python-format
+msgid "Job is put in exception state since it can't be removed from Synchroteam. Please remove manually."
+msgstr "Job is in exceptie aangezien hij niet verwijderd kan worden uit Synchroteam. Verwijder deze handmatig."
+
+#. module: pfm_synchroteam
+#: model:mail.message.subtype,description:pfm_synchroteam.mt_job_sent
+msgid "Job sent"
+msgstr "Job verzonden"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_job_type_model
+msgid "Job types"
+msgstr "Job typen"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_job_model
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_partner__job_ids
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_users__job_ids
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__job_ids
+#: model:ir.ui.menu,name:pfm_synchroteam.job_main
+#: model:ir.ui.menu,name:pfm_synchroteam.menu_job
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_calendar
+msgid "Jobs"
+msgstr "Functies"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field____last_update
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value____last_update
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template____last_update
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job____last_update
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag____last_update
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type____last_update
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__write_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__write_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__write_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__write_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__write_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__write_uid
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__write_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__write_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__write_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__write_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__write_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__write_date
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order_line__location_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_move__pfm_location_id
+msgid "Location"
+msgstr "Locatie"
+
+#. module: pfm_synchroteam
+#: selection:sale.order,state:0
+msgid "Locked"
+msgstr "Vergrendeld"
+
+#. module: pfm_synchroteam
+#: selection:job.job,priority:0
+msgid "Low"
+msgstr "Laag"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Hoofd bijlage"
+
+#. module: pfm_synchroteam
+#: model:res.groups,name:pfm_synchroteam.pfm_job_manager
+msgid "Manager"
+msgstr "Manager"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__manufacture_count
+msgid "Manufacture Count"
+msgstr "Productie Telling"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_mrp_production
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__manufacture_ids
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Manufacturing Order(s)"
+msgstr "Productieorder(s)"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__manufacture_ids
+msgid "Manufacturing Orders"
+msgstr "ManManufacturing Orders"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:176
+#, python-format
+msgid "Manufacturing product %s should be set as make2order since it will be used in a job."
+msgstr "Manufacturing product %s moet ingesteld worden als make2order aangezien deze wordt gebruikt in een job."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__mechanic
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Mechanic"
+msgstr "Monteur"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sh_message_wizard__name
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.sh_message_wizard
+msgid "Message"
+msgstr "Bericht"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_has_error
+msgid "Message Delivery error"
+msgstr "Bericht afleverfout"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_ids
+msgid "Messages"
+msgstr "Berichten"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:470
+#, python-format
+msgid "Mobile is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Mobiel is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "My Jobs"
+msgstr "Mijn Jobs"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field__name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job_tag__name
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__name
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Name"
+msgstr "Naam"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_product_product__need_to_perform_task
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_product_template__need_to_perform_task
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_project_task__need_to_perform_task
+msgid "Need to be performed before Job"
+msgstr "Moet vóór Job worden uitgevoerd"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_project_task_search_pfm_job_inherit
+msgid "Needs to be performed for Job"
+msgstr "Moet vóór Job worden uitgevoerd"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:137
+#: code:addons/pfm_synchroteam/models/job_job.py:261
+#: code:addons/pfm_synchroteam/models/job_job.py:262
+#, python-format
+msgid "New"
+msgstr "Nieuw"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:908
+#, python-format
+msgid "New Product: %sx - %s/ %s - EU%s "
+msgstr "Nieuw product: %sx - %s/ %s - EU%s "
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Volgende activiteit deadline"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__activity_summary
+msgid "Next Activity Summary"
+msgstr "Omschrijving volgende actie"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__activity_type_id
+msgid "Next Activity Type"
+msgstr "Volgende activiteit type"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_hr_settings__last_checked_datetime
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_config_settings__last_checked_datetime
+msgid "Next Execution Job Date"
+msgstr "Volgende uitvoering jobdatum"
+
+#. module: pfm_synchroteam
+#: selection:job.job,priority:0
+msgid "Normal"
+msgstr "Normaal"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Aantal acties"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_has_error_counter
+msgid "Number of error"
+msgstr "Aantal foutmeldingen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Aantal berichten die actie vereisen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Aantal berichten met leveringsfout"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Aantal ongelezen berichten"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.sh_message_wizard
+msgid "OK"
+msgstr "OK"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_warehouse__one_step_location
+msgid "One Step Location Route"
+msgstr "Eenstapslocatieroute"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order_line.py:43
+#: code:addons/pfm_synchroteam/models/sale_order_line.py:98
+#, python-format
+msgid "Only one asset is allowed per job."
+msgstr "Maar een asset is toegestaan per job."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__tag_ids
+msgid "Optional tags you may want to assign for custom Job"
+msgstr "Optionele tags die u mogelijk wilt toewijzen voor aangepaste taak"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_sale_order_line
+msgid "Order Line(s)"
+msgstr "Orderregel(s)"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+#: selection:job.job,activity_state:0
+msgid "Overdue"
+msgstr "Vervallen"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Overdue Job, maturity date passed"
+msgstr "Achterstallige Job, vervaldatum verstreken"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.res_config_settings_view_form
+msgid "PFM ST Setting"
+msgstr "PFM ST instelling"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_pfm_st_setting
+msgid "PFM ST Settings"
+msgstr "PFM ST instellingen"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_res_partner
+msgid "Partner"
+msgstr "Partner"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__product_ids
+msgid "Parts"
+msgstr "Onderdelen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__payload_stored
+msgid "Payload"
+msgstr "Payload"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:465
+#, python-format
+msgid "Phone is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Telefoon is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__picking_notes
+msgid "Picking Notes"
+msgstr "Picking notities"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:929
+#, python-format
+msgid "Picking is ready to be processed"
+msgstr "Picking staat klaar om te verwerken"
+
+#. module: pfm_synchroteam
+#: selection:job.job,activity_state:0 selection:job.job,status:0
+msgid "Planned"
+msgstr "Gepland"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Planning"
+msgstr "Planning"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:351
+#: code:addons/pfm_synchroteam/models/job_job.py:354
+#, python-format
+msgid "Please remove job from ST before it can be set to draft."
+msgstr "Verwijder job uit ST zodat deze naar concept kan worden gezet."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__access_url
+msgid "Portal Access URL"
+msgstr "Portaal toegang URL"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__priority
+msgid "Priority"
+msgstr "Prioriteit"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:291
+#, python-format
+msgid "Priority is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Prioriteit is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_product_product
+msgid "Product"
+msgstr "Artikel"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:290
+#, python-format
+msgid "Product %s has no reference set, please set one."
+msgstr "Product %s heeft een referentie, zet deze."
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_product_category
+msgid "Product Category"
+msgstr "Product categorie"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_product_template
+msgid "Product Template"
+msgstr "Product sjabloon"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_mrp_production
+msgid "Production Order"
+msgstr "Productieorder"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__state_id
+msgid "Province"
+msgstr "Provincie"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__public_link
+msgid "Public Link"
+msgstr "Publieke link"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__purchase_count
+msgid "Purchase Count"
+msgstr "Inkoop aantal"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_purchase_order
+msgid "Purchase Order"
+msgstr "Inkooporder"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_purchase_order
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__purchase_ids
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Purchase Order(s)"
+msgstr "Inkooporder(s)"
+
+#. module: pfm_synchroteam
+#: selection:sale.order,state:0
+msgid "Quotation"
+msgstr "Citaat"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:80
+#, python-format
+msgid "Quotation %s created for ticket."
+msgstr "Offerte %s aangemaakt voor ticket."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_helpdesk_ticket__sale_count
+msgid "Quotation Count"
+msgstr "Offerte aantal"
+
+#. module: pfm_synchroteam
+#: selection:sale.order,state:0
+msgid "Quotation Sent"
+msgstr "Offerte verzonden"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_helpdesk_ticket_inherit
+msgid "Quotation/Sale Order(s)"
+msgstr "Offerte / verkooporder(s)"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_helpdesk_ticket__order_ids
+msgid "Quotations"
+msgstr "Offertes"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Release to ST"
+msgstr "Release naar ST"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:158
+#, python-format
+msgid "Remove job %s from ST first."
+msgstr "Verwijder eerst de job %s uit ST."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__report
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Report Detail"
+msgstr "Rapportdetails"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__require_approval
+msgid "Require Approval"
+msgstr "Goedkeuring vereisen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__response_stored
+msgid "Response"
+msgstr "Antwoord"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__activity_user_id
+msgid "Responsible User"
+msgstr "Verantwoordelijke gebruiker"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__st_job_type_id
+msgid "ST Job Type ID"
+msgstr "ST Job Type ID"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_sh_message_wizard
+msgid "ST Message Wizard"
+msgstr "ST berichten wizard"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_product_category__st_category_id
+msgid "ST Part Category ID"
+msgstr "ST onderdeel Categorie ID"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_product_product__st_id
+msgid "ST Part ID"
+msgstr "ST onderdeel ID"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_partner__st_partner_id
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_res_users__st_partner_id
+msgid "ST Partner ID"
+msgstr "ST Partner ID"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_account_tax__st_tax_id
+msgid "ST Tax ID"
+msgstr "ST belasting ID"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:215
+#: model:ir.model,name:pfm_synchroteam.model_sale_order
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__order_id
+#, python-format
+msgid "Sale Order"
+msgstr "Verkooporder"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__sale_order_line_count
+msgid "Sale Order Line Count"
+msgstr "Verkoop Order Line Aantal"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Sale Order Line(s)"
+msgstr "Verkooporderregel(s)"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__sale_order_line_ids
+msgid "Sale Order Lines"
+msgstr "Verkooporderregels"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_sale_order
+msgid "Sale Order(s)"
+msgstr "Verkooporder(s)"
+
+#. module: pfm_synchroteam
+#: selection:sale.order,state:0
+msgid "Sales Order"
+msgstr "Verkooporder"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkooporderregel"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__schedule_end_date
+msgid "Schedule End Date"
+msgstr "Einddatum plannen"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__schedule_start_date
+msgid "Schedule Start date"
+msgstr "Startdatum plannen"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Scheduled"
+msgstr "Ggepland"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Search Job"
+msgstr "Baan zoeken"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__access_token
+msgid "Security Token"
+msgstr "Veiligheidstoken"
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0
+msgid "Sent"
+msgstr "Verzonden"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_type__sent_to_st
+msgid "Sent to ST"
+msgstr "Verzonden naar ST"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1119
+#: code:addons/pfm_synchroteam/models/sale_order.py:197
+#, python-format
+msgid "Set API key for ST synchronization"
+msgstr "Zet API key voor ST synchronizatie"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1116
+#: code:addons/pfm_synchroteam/models/sale_order.py:194
+#, python-format
+msgid "Set domain for ST synchronization"
+msgstr "Zet domain voor ST synchronizatie"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Set to Draft"
+msgstr "Zet op concept"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Settings"
+msgstr "Instellingen"
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0
+msgid "Started"
+msgstr "Gestart"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:450
+#, python-format
+msgid "State is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Provincie is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__state
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Status"
+msgstr "Status"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status gebaseerd op activiteiten\n"
+"Te laat: Datum is al gepasseerd\n"
+"Vandaag: Activiteit datum is vandaag\n"
+"Gepland: Toekomstige activiteiten."
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_stock_move
+msgid "Stock Move"
+msgstr "Voorraadbeweging"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_stock_picking
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__stock_picking_ids
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Stock Picking(s)"
+msgstr "Voorraad Picking(s)"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__stock_picking_count
+msgid "Stock Picking(s) Count"
+msgstr "Voorraad Picking(s) Aantal"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_stock_rule
+msgid "Stock Rule"
+msgstr "Voorraad regel"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__street
+msgid "Street"
+msgstr "Straat"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:440
+#, python-format
+msgid "Street is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Straat is anders in Synchroteam, corrigeer eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__street2
+msgid "Street2"
+msgstr "Straat2"
+
+#. module: pfm_synchroteam
+#: selection:job.job,status:0
+msgid "Suspended/paused"
+msgstr "Geschorst/Gepauzeerd"
+
+#. module: pfm_synchroteam
+#: model:ir.module.category,name:pfm_synchroteam.pfm_synchroteam_module
+msgid "Synchroteam"
+msgstr "Synchroteam"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.server,name:pfm_synchroteam.ir_cron_planned_action_ir_actions_server
+#: model:ir.cron,cron_name:pfm_synchroteam.ir_cron_planned_action
+#: model:ir.cron,name:pfm_synchroteam.ir_cron_planned_action
+msgid "Synchroteam: Release Planned Jobs"
+msgstr "Synchroteam: geplande taken vrijgeven"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.server,name:pfm_synchroteam.ir_cron_st_action_ir_actions_server
+#: model:ir.cron,cron_name:pfm_synchroteam.ir_cron_st_action
+#: model:ir.cron,name:pfm_synchroteam.ir_cron_st_action
+msgid "Synchroteam: run scheduler"
+msgstr "Synchroteam: scheduler uitvoeren"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__tag_ids
+msgid "Tags"
+msgstr "Labels"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_project_task
+msgid "Task"
+msgstr "Taak"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__task_count
+msgid "Task Count"
+msgstr "Antal taken"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__task_ids
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Task(s)"
+msgstr "Taak"
+
+#. module: pfm_synchroteam
+#: model:ir.actions.act_window,name:pfm_synchroteam.action_project_task
+msgid "Tasks(s)"
+msgstr "Taak"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_account_tax
+msgid "Tax"
+msgstr "Belasting"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__template_id
+msgid "Template"
+msgstr "Sjabloon"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_description_template__name
+msgid "Template Name"
+msgstr "Sjabloonnaam"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.res_config_settings_view_form
+msgid "Test Connection"
+msgstr "Test verbinding"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:368
+#: code:addons/pfm_synchroteam/models/job_job.py:371
+#, python-format
+msgid "There is an exception in the ST flow. Please check and correct."
+msgstr "Er is een exceptie in de ST flow. Controleer en corrigeer deze."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1221
+#, python-format
+msgid "There is no invoiceable line. If a product has a Delivered quantities invoicing policy, please make sure that a quantity has been delivered."
+msgstr "Er is geen regel welke gefactureerd kan worden. Indien een product een factuur policy heeft, zet deze op de correcte hoeveelheid."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__ticket_count
+msgid "Ticket Count"
+msgstr "Ticket Aantal"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.job_job_form
+msgid "Tickets)"
+msgstr "Tickets)"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__duration
+msgid "Time spent working on the job, given in minutes"
+msgstr "Tijd besteed aan het werk, in minuten"
+
+#. module: pfm_synchroteam
+#: selection:job.job,activity_state:0
+msgid "Today"
+msgstr "Vandaag"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_stock_picking
+msgid "Transfer"
+msgstr "Overdracht"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_stock_warehouse__two_step_location
+msgid "Two Step Location"
+msgstr "Twee staps locatie"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+msgid "Type"
+msgstr "Soort"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_sale_order_type
+msgid "Type of sale order"
+msgstr "Type verkooporder"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_unread
+msgid "Unread Messages"
+msgstr "Ongelezen berichten"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Aantal ongelezen berichten"
+
+#. module: pfm_synchroteam
+#: model:ir.module.category,description:pfm_synchroteam.pfm_synchroteam_module
+msgid "User access level for this module"
+msgstr "Gebruikerstoegangsniveau voor deze module"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_res_users
+msgid "Users"
+msgstr "Gebruikers"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_order_form_job_inherit
+msgid "Validate"
+msgstr "Bevestig"
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_job_job_filter
+#: selection:job.job,status:0
+msgid "Validated"
+msgstr "Goedgekeurd"
+
+#. module: pfm_synchroteam
+#: selection:sale.order,state:0
+msgid "Validation"
+msgstr "Bevestiging"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__validation_date
+msgid "Validation Date"
+msgstr "Bevestigingsdatum"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_sale_order__validation_job_ids
+msgid "Validation Jobs"
+msgstr "Validatie Jobs"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_custom_field_value__value
+msgid "Value"
+msgstr "Waarde"
+
+#. module: pfm_synchroteam
+#: model:ir.model,name:pfm_synchroteam.model_stock_warehouse
+msgid "Warehouse"
+msgstr "Magazijn"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1048
+#, python-format
+msgid "Warning: Delivery %s needs to be delivered to be able to process the job."
+msgstr "Warning: Levering %s moet eerst geleverd worden om de job te verwerken."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1094
+#: code:addons/pfm_synchroteam/models/job_job.py:1098
+#, python-format
+msgid "Warning: Job is ready to be performed but is not planned yet."
+msgstr "Warning: Job staat klaar om uitgevoerd te worden, maar is nog niet gepland."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:1076
+#: code:addons/pfm_synchroteam/models/job_job.py:1079
+#, python-format
+msgid "Warning: Task %s needs to be set to done to be able to process the job."
+msgstr "Warning: Task %s moet eerst voltooid worden om de job te verwerken."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__website_message_ids
+msgid "Website Messages"
+msgstr "Website berichten"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__website_message_ids
+msgid "Website communication history"
+msgstr "Website communicatie geschiedenis"
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,help:pfm_synchroteam.field_job_job__partner_id
+msgid "You can find a customer by its Name, TIN, Email or Internal Reference."
+msgstr "U kan een klant vinden op naam, BTW nummer, e-mail of interne referentie."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:235
+#, python-format
+msgid "You can only delete cancelled jobs."
+msgstr "Alleen cancelled jobs kunnen worden verwijderd."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:233
+#, python-format
+msgid "You cannot delete a job related to an order."
+msgstr "Job kan je niet verwijderen door een gerelateerde order."
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:439
+#, python-format
+msgid "Your job can not be created in ST due to: %s"
+msgstr "De job kan niet worden gecreëerd in ST omdat: %s"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/sale_order.py:441
+#, python-format
+msgid "Your job can not be created in ST. Please contact your system administrator."
+msgstr "De job kan niet worden gecreëerd in ST. Neem contact op met de system administrator."
+
+#. module: pfm_synchroteam
+#: model:ir.model.fields,field_description:pfm_synchroteam.field_job_job__zip
+msgid "ZIP"
+msgstr "Postcode"
+
+#. module: pfm_synchroteam
+#: code:addons/pfm_synchroteam/models/job_job.py:455
+#, python-format
+msgid "ZIP is different in Synchroteam, please correct in Synchroteam first."
+msgstr "Postcode is anders in Synchroteam, corrigeer deze eerst in Synchroteam."
+
+#. module: pfm_synchroteam
+#: model_terms:ir.ui.view,arch_db:pfm_synchroteam.view_order_form_job_inherit
+msgid "jobs"
+msgstr "jobs"

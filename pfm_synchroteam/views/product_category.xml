@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Product Category -->
+        <record id="view_paroduct_category_pfm_job_iorynherit" model="ir.ui.view">
+            <field name="name">product.categ.form.job.inherit</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='parent_id']" position="after">
+                    <field name="st_category_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

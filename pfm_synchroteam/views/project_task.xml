@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    	 <!--Project task -->
+        <record id="view_project_task_pfm_job_inherit" model="ir.ui.view">
+            <field name="name">project.form.job.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='tag_ids']" position="after">
+                    <field name="job_id" readonly="1" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                    <field name="need_to_perform_task" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                    <field name="job_task_released" readonly="1" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                    <field name="job_task_in_alert" readonly="0" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_project_task_tree_pfm_job_inherit" model="ir.ui.view">
+            <field name="name">project.tree.pfm.job.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_tree2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_deadline']" position="after">
+                    <field name="need_to_perform_task"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_project_task_search_pfm_job_inherit" model="ir.ui.view">
+            <field name="name">project.search.pfm.job.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_search_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='starred']" position="after">
+                    <filter string="Needs to be performed for Job" name="job_tasks" domain="[('need_to_perform_task','=',True)]"/>
+                    <separator/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

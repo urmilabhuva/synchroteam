@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="view_order_form_inherit" model="ir.ui.view">
+		<field name="name">sale.order.form.inherit</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="arch" type="xml">
+			<field name="partner_invoice_id" position="attributes">
+				<attribute name="domain">[('parent_id', '=', partner_id), ('type','=','invoice')]</attribute>
+			</field>
+
+			<xpath expr="//field[@name='partner_id']" position="attributes">
+				<attribute name="domain">[('is_company','=',True),('parent_id','=',False)]</attribute>
+			</xpath>
+
+			<field name="pricelist_id" position="after">
+				<field name="agreement_id" domain="[('partner_id', '=', partner_id)]" context="{'default_partner_id': partner_id}"/>
+			</field>
+			<field name="payment_term_id" position="after">
+				<field name="client_order_ref"/>
+				<field name="analytic_account_id" context="{'default_partner_id':partner_invoice_id, 'default_name':name}" attrs="{'readonly': [('invoice_count','!=',0),('state','=','sale')]}" groups="analytic.group_analytic_accounting" force_save="1"/>
+
+			</field>
+			<xpath expr="//page[@name='other_information']/group/group/field[@name='analytic_account_id']" position="replace"/>
+
+			<xpath expr="//page[@name='other_information']/group/group/field[@name='client_order_ref']" position="replace"/>
+
+			<xpath expr="//field[@name='picking_policy']" position="attributes">
+				<attribute name="attrs">{"readonly": [["state","not in",["draft","sent","validation"]]]}</attribute>
+			</xpath>
+ 			<xpath expr="//field[@name='operating_unit_id']" position="attributes">
+ 				<attribute name="attrs">{"readonly": [["state","not in",["draft","sent","validation"]]]}</attribute>
+ 			</xpath>
+
+			<xpath expr="//field[@name='order_line']/tree/field[@name='price_total']" position="after">
+				<button name="explode_bom" type="object" string="BOM Name"/>
+			</xpath>
+
+			<xpath expr="//field[@name='analytic_account_id']" position="after">
+				<field name="repair_order"/>
+			</xpath>
+
+			<xpath expr="//field[@name='order_line']" position="before">
+				<button name="explode_bom" type="object" string="BOM Names" class="oe_right"/>
+			</xpath>
+
+			<xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="before">
+				<field name="incoming_repair_lot_id" context="{'default_product_id': product_id}" attrs="{'column_invisible': [('parent.repair_order','=',False)]}"/>
+				<field name="outgoing_repair_lot_id" context="{'default_product_id': product_id}" attrs="{'column_invisible': [('parent.repair_order','=',False)]}"/>
+				<field name="warranty" attrs="{'column_invisible': [('parent.repair_order','=',False)],'readonly': [('qty_invoiced', '&gt;', 0)]}"/>
+			</xpath>
+
+		</field>
+	</record>
+
+</odoo>

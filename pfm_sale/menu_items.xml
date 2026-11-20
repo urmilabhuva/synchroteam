@@ -1,0 +1,5 @@
+<odoo>
+
+    <menuitem id="customer_agreement_menu" parent="sale.menu_sales_config" action="customer_agreement_action" sequence="25"/>
+
+</odoo>

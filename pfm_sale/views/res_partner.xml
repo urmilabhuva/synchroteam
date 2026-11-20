@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="res_partner_custom_agreement_form_view">
+        <field name="name">res.partner.custom_agree.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Agreements" name="customer_agreement">
+                    <field
+                        name="agreement_ids"
+                        widget="section_and_note_one2many"
+                        mode="tree" context="{'default_partner_id': active_id}"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

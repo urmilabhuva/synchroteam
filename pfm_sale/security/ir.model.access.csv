@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_customer_agreement_manager,access_customer_agreement_manager,model_customer_agreement,sales_team.group_sale_manager,1,1,1,1
+access_customer_agreement_salesman,access_customer_agreement_salesman,model_customer_agreement,sales_team.group_sale_salesman,1,0,0,0
+access_customer_agreement_account,access_customer_agreement_account,model_customer_agreement,account.group_account_invoice,1,0,0,0

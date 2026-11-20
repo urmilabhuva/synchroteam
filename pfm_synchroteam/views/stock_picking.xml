@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Stock Picking -->
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="job_id" readonly="1" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                <field name="job_picking_released" readonly="1" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                <field name="job_picking_in_alert" readonly="0" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                <field name="mechanic" readonly="1" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+                <field name="job_picking_notes" attrs="{'invisible' : [('job_id','in',(False,None))]}"/>
+            </xpath>
+            <xpath expr="//field[@name='move_ids_without_package']//tree/field[@name='product_id']" position="attributes">
+            	<attribute name="options">{'no_create_edit': True,'no_create': True}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

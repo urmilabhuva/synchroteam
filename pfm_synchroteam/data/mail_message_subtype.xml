@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+
+    <record id="mt_job_sent" model="mail.message.subtype">
+            <field name="name">Job Sent</field>
+            <field name="res_model">job.job</field>
+            <field name="default" eval="False"/>
+            <field name="description">Job sent</field>
+    </record>
+
+    <record id="mt_job_planned" model="mail.message.subtype">
+        <field name="name">Job Planned</field>
+        <field name="res_model">job.job</field>
+        <field name="default" eval="False"/>
+        <field name="description">Job Planned</field>
+    </record>
+
+</odoo>

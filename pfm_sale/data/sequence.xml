@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+
+    <record model="ir.sequence" id="seq_agreement">
+        <field name="name">Agreement Code</field>
+        <field name="code">quality.point</field>
+        <field name="prefix">AGREEMENT%(year)s%(month)s</field>
+        <field eval="1" name="number_next"/>
+        <field eval="1" name="number_increment"/>
+        <field eval="True" name="use_date_range"/>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+</odoo>

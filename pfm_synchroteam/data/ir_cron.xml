@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+
+    <record forcecreate="True" id="ir_cron_st_action" model="ir.cron">
+        <field name="name">Synchroteam: run scheduler</field>
+        <field name="model_id" ref="model_job_job"/>
+        <field name="state">code</field>
+        <field name="code">model.run_st_schedule()</field>
+        <field eval="True" name="active"/>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">50</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field eval="False" name="doall"/>
+    </record>
+
+    <record forcecreate="True" id="ir_cron_planned_action" model="ir.cron">
+        <field name="name">Synchroteam: Release Planned Jobs</field>
+        <field name="model_id" ref="model_job_job"/>
+        <field name="state">code</field>
+        <field name="code">model.check_release_st_job()</field>
+        <field eval="True" name="active"/>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field eval="False" name="doall"/>
+    </record>
+
+</odoo>

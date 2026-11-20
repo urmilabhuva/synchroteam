@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_order_form_job_inherit" model="ir.ui.view">
+            <field name="name">sale.order.form.job.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_view_invoice']" position="before">
+                    <button class="oe_stat_button" icon="fa-wrench" type="object" name="job_action_views" attrs="{'invisible': [('jobs_count', '=', 0)]}">
+                        <field name="jobs_count" string="jobs" widget="statinfo" />
+                    </button>
+                </xpath>
+                <xpath expr="//group[@name='order_details']" position="inside">
+                    <field name="installation_date" attrs="{'invisible': [('jobs_count', '=', 0)]}"/>
+                    <field name="job_ids" widget="many2many_tags" invisible="1"/>
+                    <field name="ticket_id"/>
+                    <!-- <field name="repair_order" invisible="1"/> -->
+                    <field name="has_draft_jobs" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//header/field[@name='state']" position="replace">
+                    <field name="state" widget="statusbar" statusbar_visible="draft,sent,validation,sale"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/form/group/group" positon="inside">
+                    <field name="order_id" invisible="1"/>
+                    <field name="job_status" invisible="1"/>
+                    <field name="job_id" domain="[('order_id', '=', parent.id),('status', '=', 'draft')]" context="{'default_order_id': parent.id, 'default_delivery_address': parent.partner_shipping_id}" attrs="{'readonly': [('job_status', 'not in', ['draft', 'cancelled', 'exception', 'None'])]}"/>
+                </xpath>
+                <xpath expr="//tree/field[@name='name']" position="after">
+                    <field name="order_id" invisible="1"/>
+                    <field name="job_status" invisible="1"/>
+                    <field name="job_id" domain="[('order_id', '=', order_id),('status', '=', 'draft')]" context="{'default_order_id': order_id, 'default_delivery_address': parent.partner_shipping_id, 'sale_context': True, 'default_site_id': parent.partner_shipping_id}" attrs="{'readonly': [('job_status', 'not in', ['draft', 'cancelled', 'exception', 'None'])]}"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree" position="inside">
+                    <field name="is_job" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('job_status', 'not in', ['draft', 'cancelled', 'exception', 'None'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('job_status', 'not in', ['draft', 'cancelled', 'exception', 'None'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('job_status', 'not in', ['draft', 'cancelled', 'exception', 'None'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='order_line']//tree" position="attributes">
+                    <attribute name="decoration-info">(not display_type and invoice_status == 'to invoice' and not is_job)</attribute>
+                    <attribute name="decoration-success">(is_job)</attribute>
+                </xpath>
+                <xpath expr="//header/button[@name='action_cancel']" position="before">
+                    <button name="action_validate" id="action_validate"
+                            string="Validate" class="btn-primary" type="object"
+                            attrs="{'invisible': [('state', 'not in', ['validation'])]}"/>
+                    <button name="action_validate" id="action_validate_after_confirm"
+                            string="Validate Additional Jobs" class="btn-primary" type="object"
+                            attrs="{'invisible': ['|', ('has_draft_jobs', '=', False), ('state', 'not in', ('sale','done'))]}"/>
+                </xpath>
+                <xpath expr="//button[@name='action_quotation_send'][4]" position="attributes">
+                    <attribute name="states">sent,sale,validation</attribute>
+                </xpath>
+
+                <xpath expr="//button[@name='action_cancel']" position="attributes">
+                    <attribute name="states">sent,sale,validation</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
